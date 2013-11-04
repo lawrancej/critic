@@ -1,0 +1,12 @@
+{
+	"title":"critic", 
+	"description":"code review tool - integrated tightly with github", 
+	"url":"b3ngr33ni3r.github.io/critic",  
+	"port":"80",  
+	"callback":"#authorized",  
+	"token":"",  
+  "secret":"",  
+  "users":{
+		"emails":""  
+	}
+}
