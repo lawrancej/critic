@@ -1,6 +1,8 @@
 critic
 ======
 
+> __Note:__ This needs to be rewritten, as it doesn't reflect the decisions that have been made about how critic works. 
+
 code review tool - integrated tightly with github
 
 ## What is it?
