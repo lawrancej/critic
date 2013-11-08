@@ -1,7 +1,7 @@
 critic
 ======
 
-# DEV BRANCH
+# MASTER BRANCH
 
 
 code review tool - integrated tightly with github
