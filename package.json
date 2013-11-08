@@ -1,0 +1,11 @@
+{
+  "dependencies":{
+    "express":"3.4.x",
+    "github":"0.1.x",
+    "uniformer":"~0.0.3",
+    "reqall":"~0.0.1"
+  },
+  "scripts":{
+    "start":"node core/app.js"
+  }
+}
