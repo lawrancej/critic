@@ -4,7 +4,6 @@ express = require 'express'
 helpers = require('./helpers')
 config = require('uniformer')({defaults:{debug:false}})
 
-
 # make sure our config has these keys
 if (err = helpers.validate(config,"access_token","port","debug")) != false
   console.log err
@@ -26,7 +25,12 @@ github.authenticate {
 app = express()
 
 app.get "/",(req,res)->
-  res.send "hi dood"
+  res.send "hi. you want <a href='/flow/org'>/flow/org</a>"
+
+app.get "/flow/org",(request,response)->
+  helpers.flow.org(github,request,response)
+app.get "/flow/user",(request,response)->
+  helpers.flow.user(github,request,response)
 
 app.listen config.port
 console.log "critic up on "+config.port

@@ -34,7 +34,15 @@ github.authenticate({
 app = express();
 
 app.get("/", function(req, res) {
-  return res.send("hi dood");
+  return res.send("hi. you want <a href='/flow/org'>/flow/org</a>");
+});
+
+app.get("/flow/org", function(request, response) {
+  return helpers.flow.org(github, request, response);
+});
+
+app.get("/flow/user", function(request, response) {
+  return helpers.flow.user(github, request, response);
 });
 
 app.listen(config.port);
