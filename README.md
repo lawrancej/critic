@@ -4,25 +4,21 @@ critic
 # DEV BRANCH
 
 
-> __Note:__ This needs to be rewritten, as it doesn't reflect the decisions that have been made about how critic works. 
+> Critic is a node application, which means you need to be able to run node to deploy it!
 
 code review tool - integrated tightly with github
 
 ## What is it?
 
-It's a tool that allows users to review other's code (either public github code, or other users code). Pretty straightforward!  
-Try it at [b3ngr33ni3r.github.com/critic](http://b3ngr33ni3r.github.io/critic).
+Critic is a combination of stumbleupon for github code, and crowdranker. The aim of the project is to allow
+(anonymous) code review in a classroom enviroment. __That being said__, Critic also works great for any sort
+of random code review (ie: get thrown some code, review it).
 
-## How's it work?
+## Example
 
-It's written in __javascript__, with a __node__ backend. This means critic runs in the browser.
-
-## Is it easy to setup?
-
-Yes and no. If you want to __run a node server__, you can just `npm install critic` (maybe, if i can secure this name). Then, `npm start` and fill
-out the command line prompts (github app info, callback url, etc). You'll only be prompted for this on the first launch, upon which we create
-a json or yaml config file. This will be used for the next launches.  
-
+You can play with critic at [critic.bengreenier.com](http://critic.bengreenier.com), and get a feel for what
+it can (and can't) do.
+> Note that this instance of critic uses a memory store, meaning that user data disappears when the app restarts.
 
 ## Licensing?
 
