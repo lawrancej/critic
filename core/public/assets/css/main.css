@@ -1,0 +1,11 @@
+.container-big {
+  min-height: 700px; }
+
+.dropdown-danger {
+  color: #e74c3c; }
+  .dropdown-danger :hover,
+  .dropdown-danger :focus {
+    background-color: #e74c3c; }
+
+.jump {
+  text-transform: uppercase; }
